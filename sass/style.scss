@@ -63,14 +63,14 @@ html {
 }
 
 .btn-white {
-  border:1px solid $white;
-  color:$blue-darker;
+  border: 1px solid $white;
+  color: $blue-darker;
   transition: 400ms all ease;
 
   &:hover {
-    color:$white;
+    color: $white;
     background-color: $blue-darker;
-    cursor:pointer;
+    cursor: pointer;
   }
 }
 
@@ -207,35 +207,31 @@ html {
 }
 
 .ask {
-  padding:20px 120px;
+  padding: 20px 120px;
   background-color: #5186bf;
 
   .ask-item {
-    color:$white;
+    color: $white;
   }
+
   .btn {
-    width:50%;
+    width: 50%;
   }
 }
 
 .about-us {
-  margin-top: 200px;
-  background-color: #50514f;
+  text-align: center;
 
   .about-us-description {
     padding: 100px;
   }
 
   .about-us-img {
-    background: url("/images/flower.jpeg") no-repeat;
-    max-width: 50%;
-    height: 300px;
-    background-size: cover;
+    object-fit: contain;
   }
 
   .about-us-items {
     text-align: left;
-    color: $white;
   }
 }
 @keyframes letter-appear {

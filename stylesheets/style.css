@@ -107,13 +107,13 @@ html { overflow-x: hidden; }
 
 .ask .btn, .ask .hero-container .btn-contact, .hero-container .ask .btn-contact { width: 50%; }
 
-.about-us { margin-top: 200px; background-color: #50514f; }
+.about-us { text-align: center; }
 
 .about-us .about-us-description { padding: 100px; }
 
-.about-us .about-us-img { background: url("/images/flower.jpeg") no-repeat; max-width: 50%; height: 300px; background-size: cover; }
+.about-us .about-us-img { -o-object-fit: contain; object-fit: contain; }
 
-.about-us .about-us-items { text-align: left; color: #fff; }
+.about-us .about-us-items { text-align: left; }
 
 @keyframes letter-appear { 0% { letter-spacing: -0.5em;
     opacity: 0; }
