@@ -25,11 +25,11 @@
   </header>
   <main>
     <section class="hero-container">
-      <div class="hero-overlay">
+      <div class="overlay">
         <div class="col-5-xl flex-center">
           <h1 class="hero-title">Profesjonalne sprzątanie na terenie Łodzi i okolic</h1>
           <hr class="hero-seperator">
-          <button class="btn btn-contact">Zamów wizyte</button>
+          <button class="btn btn-blue">Zamów wizyte</button>
         </div>
       </div>
     </section>
@@ -37,23 +37,23 @@
     <section class="offer">
       <h2 class="section-title"> Nasze usługi: </h2>
       <div class="row">
-        <div class="offer-item col-6-xl">
+        <div class="offer-item-container col-6-xl">
           <i class="fas fa-building"></i>
           <h2 class="section-title">Biuro</h2>
           <p class="section-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in pretium ligula. Curabitur et diam sit amet est varius bibendum. Suspendisse potenti. </p>
-          <button class="btn btn-offer">Więcej</button>
+          <button class="btn btn-blue">Więcej</button>
         </div>
-        <div class="offer-item col-6-xl">
+        <div class="offer-item-container col-6-xl">
           <i class="fas fa-home"></i>
           <h2 class="section-title">Dom</h2>
           <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in pretium ligula. Curabitur et diam sit amet est varius bibendum. Suspendisse potenti. </p>
-          <button class="btn btn-offer">Więcej</button>
+          <button class="btn btn-blue">Więcej</button>
         </div>
-        <div class="offer-item col-6-xl">
+        <div class="offer-item-container col-6-xl">
           <i class="fas fa-warehouse"></i>
           <h2 class="section-title">Lokale po remontach</h2>
           <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in pretium ligula. Curabitur et diam sit amet est varius bibendum. Suspendisse potenti. </p>
-          <button class="btn btn-offer">Więcej</button>
+          <button class="btn btn-blue">Więcej</button>
         </div>
       </div>
     </section>
@@ -64,12 +64,12 @@
           <h2 class="section-title">Brakuje Ci czasu na sprzątanie lub masz zbyt dużo obowiązków na głowie ? Nic sie nie stało! zrobimy to za Ciebie! Posprzątamy twój dom lub mieszkanie aż będzie lśnić używając przy tym sprzętu i środków wysokiej
             jakości.</h2>
           <ul>
-            <li class="section-text description-item"> odkurzanie i mycie podłóg </li>
-            <li class="section-text description-item"> odkurzanie i mycie podłóg </li>
-            <li class="section-text description-item"> odkurzanie i mycie podłóg </li>
-            <li class="section-text description-item"> odkurzanie i mycie podłóg </li>
-            <li class="section-text description-item"> odkurzanie i mycie podłóg </li>
-            <li class="section-text description-item"> odkurzanie i mycie podłóg </li>
+            <li class="section-text description-item">odkurzanie i mycie podłóg </li>
+            <li class="section-text description-item">doczyszczenie kuchni, </li>
+            <li class="section-text description-item">doczyszczenie łazienki i armatury łazienkowej</li>
+            <li class="section-text description-item">mycie okien </li>
+            <li class="section-text description-item">mycie blatów</li>
+            <li class="section-text description-item">ścieranie kurzu</li>
           </ul>
           <p class="section-text description-item"> Pellentesque sed efficitur nunc, eget commodo est. Donec eget ante a lorem eleifend sagittis non id odio. Ut elementum metus in laoreet condimentum. Vestibulum blandit tempor velit, a tempor augue
             scelerisque id. Cras non porttitor leo.</p>
@@ -77,21 +77,50 @@
         <div class="col-6-xl house-img"></div>
       </div>
       <div class="row">
-        <div class="col-6-xl house-img"></div>
+        <div class="col-6-xl office-img"></div>
         <div class="col-6-xl description-items">
-          <h2 class="section-title">Brakuje Ci czasu na sprzątanie lub masz zbyt dużo obowiązków na głowie ? Nic sie nie stało! zrobimy to za Ciebie! Posprzątamy twój dom lub mieszkanie aż będzie lśnić używając przy tym sprzętu i środków wysokiej
-            jakości.</h2>
+          <h2 class="section-title">Oferujemy usługi sprzątające dla firm oraz biur na terenie Łodzi w trosce o lepszy komfort Państwa pracowników. Sprzątanie firmy lub biura nie ominie nikogo dlatego zapewniamy Państwu kompleksowe sprzątanie,
+            używając przy tym sprzętu wysokiej jakości, a także sprawdzonych i odpowiednich środków przyjaznych dla Państwa pracowników.</h2>
           <ul>
-            <li class="section-text description-item"> odkurzanie i mycie podłóg </li>
-            <li class="section-text description-item"> odkurzanie i mycie podłóg </li>
-            <li class="section-text description-item"> odkurzanie i mycie podłóg </li>
-            <li class="section-text description-item"> odkurzanie i mycie podłóg </li>
-            <li class="section-text description-item"> odkurzanie i mycie podłóg </li>
-            <li class="section-text description-item"> odkurzanie i mycie podłóg </li>
+            <li class="section-text description-item"> utrzymanie czystości sal konferencyjnych</li>
+            <li class="section-text description-item"> utrzymanie czystości pomieszczeń socjalnych </li>
+            <li class="section-text description-item"> zamiatanie, mycie korytarzy i klatek schodowych </li>
+            <li class="section-text description-item"> czyszczenie mebli biurowych </li>
+            <li class="section-text description-item"> utrzymanie czystości pomieszczeń kuchennych </li>
+            <li class="section-text description-item"> mycie luster </li>
+            <li class="section-text description-item"> mycie okien </li>
+            <li class="section-text description-item"> mycie drzwi </li>
+            <li class="section-text description-item"> mycie luster </li>
+
           </ul>
           <p class="section-text description-item"> Pellentesque sed efficitur nunc, eget commodo est. Donec eget ante a lorem eleifend sagittis non id odio. Ut elementum metus in laoreet condimentum. Vestibulum blandit tempor velit, a tempor augue
             scelerisque id. Cras non porttitor leo.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="ask">
+      <div class="row flex-center">
+        <div class="col-6-xl flex-center">
+          <h3 class="ask-item section-title">Masz pytania? Zadzwoń do nas!</h3>
+        </div>
+        <div class="col-6-xl flex-center">
+          <button class="btn btn-white">Kontakt</button>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="row">
+        <div class="about-us-description col-6-xl">
+          <h2 class="section-title">Kim jesteśmy?</h2>
+
+          <p class="about-us-items section-text">Jesteśmy dynamicznie rozwijającą się firmą świadczącą usługi utrzymywania czystości w Łodzi i okolicach. W swojej pracy wykorzystujemy najlepszy sprzęt oraz środki czystości znanych marek. Posiadamy
+            wykwalifikowanych
+            pracowników, którzy od wielu lat pracują w branży. Priorytetem naszej działalności jest świadczenie usług na najwyższym poziomie. Głównym wyznacznikiem kierunku działania naszej firmy jest zadowolenie Klienta.
+          </p>
+        </div>
+        <div class="col-6-xl about-us-img"></div>
       </div>
     </section>
   </main>
