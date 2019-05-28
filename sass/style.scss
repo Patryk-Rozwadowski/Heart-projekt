@@ -1,10 +1,13 @@
 @import 'sass/grid.scss';
 @import 'sass/mixins.scss';
+@import 'sass/rwd.scss';
 $white: #fff;
 $black: #222;
+$black-lighter: #272727;
 $blue: #3082d8;
 $blue-darker: #5186bf;
 $green: #98CF33;
+$transparent: rgba(000, 000, 000, 0);
 
 html {
   overflow-x: hidden;
@@ -50,7 +53,6 @@ html {
   border: 1px solid $blue;
   color: $blue;
   border-radius: 3px;
-  width: 50%;
   margin: 0 auto;
   transition: 400ms all ease;
 
@@ -138,7 +140,7 @@ html {
 
   .btn-contact {
     @extend .btn;
-    background-color: rgba(000, 000, 000, 0);
+    background-color: $transparent;
     color: $white;
     border: 1px solid $white;
 
@@ -163,7 +165,7 @@ html {
 
   .fas {
     font-size: 7em;
-    color: $green;
+    color: $blue-darker;
   }
 
   .section-text {
@@ -208,7 +210,7 @@ html {
 
 .ask {
   padding: 20px 120px;
-  background-color: #5186bf;
+  background-color: $blue-darker;
 
   .ask-item {
     color: $white;
@@ -223,15 +225,57 @@ html {
   text-align: center;
 
   .about-us-description {
-    padding: 100px;
-  }
-
-  .about-us-img {
-    object-fit: contain;
+    padding: 150px;
   }
 
   .about-us-items {
     text-align: left;
+  }
+
+  .about-us-img {
+    border-radius: 3px;
+  }
+}
+
+.contact {
+  background-color: $blue-darker;
+
+  .section-title {
+    font-size: 3em;
+    color: $white;
+  }
+}
+
+.footer-container {
+  background-color: $black-lighter;
+  padding: 50px;
+
+  .footer-item {
+    color: $white;
+    text-align: center;
+    font-size: 1em;
+    list-style: none;
+    margin: 5px;
+  }
+
+  .footer-logo {
+    object-fit: contain;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .footer-offer {
+    padding: 0;
+  }
+
+  .far,
+  .fas {
+    color: $white;
+  }
+
+  .mail {
+    unicode-bidi: bidi-override;
+    direction: rtl;
   }
 }
 @keyframes letter-appear {

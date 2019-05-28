@@ -51,7 +51,7 @@ html { overflow-x: hidden; }
 
 .btn, .hero-container .btn-contact { padding: 10px; font-family: 'Roboto', sans-serif; transition: 300ms all ease; border-radius: 3px; }
 
-.btn-blue { background-color: #fff; border: 1px solid #3082d8; color: #3082d8; border-radius: 3px; width: 50%; margin: 0 auto; transition: 400ms all ease; }
+.btn-blue { background-color: #fff; border: 1px solid #3082d8; color: #3082d8; border-radius: 3px; margin: 0 auto; transition: 400ms all ease; }
 
 .btn-blue:hover { border: 1px solid #3082d8; background-color: #3082d8; color: #fff; cursor: pointer; }
 
@@ -83,7 +83,7 @@ html { overflow-x: hidden; }
 
 .offer .offer-item-container { text-align: center; height: 500px; padding: 100px; }
 
-.offer .fas { font-size: 7em; color: #98CF33; }
+.offer .fas { font-size: 7em; color: #5186bf; }
 
 .offer .section-text { padding: 10px; margin-top: 0; }
 
@@ -109,11 +109,27 @@ html { overflow-x: hidden; }
 
 .about-us { text-align: center; }
 
-.about-us .about-us-description { padding: 100px; }
-
-.about-us .about-us-img { -o-object-fit: contain; object-fit: contain; }
+.about-us .about-us-description { padding: 150px; }
 
 .about-us .about-us-items { text-align: left; }
+
+.about-us .about-us-img { border-radius: 3px; }
+
+.contact { background-color: #5186bf; }
+
+.contact .section-title { font-size: 3em; color: #fff; }
+
+.footer-container { background-color: #272727; padding: 50px; }
+
+.footer-container .footer-item { color: #fff; text-align: center; font-size: 1em; list-style: none; margin: 5px; }
+
+.footer-container .footer-logo { -o-object-fit: contain; object-fit: contain; height: 60px; margin-bottom: 20px; }
+
+.footer-container .footer-offer { padding: 0; }
+
+.footer-container .far, .footer-container .fas { color: #fff; }
+
+.footer-container .mail { unicode-bidi: bidi-override; direction: rtl; }
 
 @keyframes letter-appear { 0% { letter-spacing: -0.5em;
     opacity: 0; }
