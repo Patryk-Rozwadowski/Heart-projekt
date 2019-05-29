@@ -1,5 +1,3 @@
-@import 'sass/grid.scss';
-@import 'sass/mixins.scss';
 @import 'sass/rwd.scss';
 $white: #fff;
 $black: #222;
@@ -8,72 +6,12 @@ $blue: #3082d8;
 $blue-darker: #5186bf;
 $green: #98CF33;
 $transparent: rgba(000, 000, 000, 0);
+@import 'sass/mixins.scss';
+@import 'sass/components/components.scss';
+@import 'sass/grid.scss';
 
 html {
   overflow-x: hidden;
-}
-
-.section-text {
-  font-size: 1.3em;
-  @include roboto-font;
-}
-
-.section-title {
-  font-size: 1.7em;
-  @include roboto-font;
-  font-weight: 900;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.flex-center {
-  @include flex-center;
-}
-
-.overlay {
-  background-color: rgba(000, 000, 000, 0.7);
-  width: 100%;
-  height: 50%;
-  @include flex-center;
-}
-
-.btn {
-  padding: 10px;
-  @include roboto-font;
-  transition: 300ms all ease;
-  border-radius: 3px;
-}
-
-.btn-blue {
-  background-color: $white;
-  border: 1px solid $blue;
-  color: $blue;
-  border-radius: 3px;
-  margin: 0 auto;
-  transition: 400ms all ease;
-
-  &:hover {
-    border: 1px solid $blue;
-    background-color: $blue;
-    color: $white;
-    cursor: pointer;
-  }
-}
-
-.btn-white {
-  border: 1px solid $white;
-  color: $blue-darker;
-  transition: 400ms all ease;
-
-  &:hover {
-    color: $white;
-    background-color: $blue-darker;
-    cursor: pointer;
-  }
 }
 
 .navbar-container {
@@ -123,14 +61,11 @@ html {
 }
 
 .hero-container {
-  margin: 100px auto 50px;
+  margin: 50px auto;
   background: url("/images/header.jpeg") no-repeat;
   background-size: cover;
   height: 90vh;
   width: 100vw;
-  text-align: center;
-  display: flex;
-  align-items: center;
 
   .hero-title {
     @include roboto-font;
@@ -138,7 +73,7 @@ html {
     color: $white;
   }
 
-  .btn-contact {
+  .btn-white {
     @extend .btn;
     background-color: $transparent;
     color: $white;
@@ -154,16 +89,16 @@ html {
 }
 
 .offer {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   text-align: center;
 
   .offer-item-container {
     text-align: center;
-    height: 500px;
-    padding: 100px;
+    padding:50px;
   }
 
-  .fas {
+  .fas,
+  .far {
     font-size: 7em;
     color: $blue-darker;
   }
@@ -171,6 +106,15 @@ html {
   .section-text {
     padding: 10px;
     margin-top: 0;
+  }
+
+  .offer-title {
+    font-size: 2.5em;
+  }
+
+  .btn-offer {
+    width: 100%;
+    margin-top: 100px;
   }
 }
 
@@ -294,7 +238,6 @@ html {
     opacity: 1;
   }
 }
-
 * {
   box-sizing: border-box;
 }

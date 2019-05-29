@@ -15,7 +15,7 @@
   <header>
     <nav class="navbar-container">
       <ul class="navbar">
-        <li class="nav-item-logo"><img class="logo" src="./images/logo.png"></li>
+        <li class="nav-item-logo"><img class="logo" src="./images/logo.png" alt="logo heart"></li>
         <li class="nav-item">Główna strona</li>
         <li class="nav-item">Usługi</li>
         <li class="nav-item">O nas</li>
@@ -24,7 +24,7 @@
     </nav>
   </header>
   <main>
-    <section class="hero-container">
+    <section class="hero-container flex-center">
       <div class="overlay">
         <div class="col-5-xl flex-center">
           <h1 class="hero-title">Profesjonalne sprzątanie na terenie Łodzi i okolic</h1>
@@ -35,25 +35,28 @@
     </section>
 
     <section class="offer">
-      <h2 class="section-title"> Nasze usługi: </h2>
+      <h2 class="offer-title section-title"> W naszej ofercie znajdą państwo: </h2>
       <div class="row">
-        <div class="offer-item-container col-6-xl">
+        <div class="offer-item-container col-6-xl col-3-md">
           <i class="fas fa-building"></i>
           <h2 class="section-title">Biuro</h2>
           <p class="section-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in pretium ligula. Curabitur et diam sit amet est varius bibendum. Suspendisse potenti. </p>
-          <button class="btn btn-blue">Więcej</button>
         </div>
-        <div class="offer-item-container col-6-xl">
+        <div class="offer-item-container col-6-xl col-3-md">
           <i class="fas fa-home"></i>
           <h2 class="section-title">Dom</h2>
           <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in pretium ligula. Curabitur et diam sit amet est varius bibendum. Suspendisse potenti. </p>
-          <button class="btn btn-blue">Więcej</button>
         </div>
-        <div class="offer-item-container col-6-xl">
+
+        <div class="offer-item-container col-6-xl col-3-md">
           <i class="fas fa-warehouse"></i>
           <h2 class="section-title">Lokale po remontach</h2>
           <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in pretium ligula. Curabitur et diam sit amet est varius bibendum. Suspendisse potenti. </p>
-          <button class="btn btn-blue">Więcej</button>
+        </div>
+        <div class="offer-item-container col-6-xl col-3-md">
+          <i class="far fa-window-maximize"></i>
+          <h2 class="section-title">Mycie okien</h2>
+          <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in pretium ligula. Curabitur et diam sit amet est varius bibendum. Suspendisse potenti. </p>
         </div>
       </div>
     </section>
@@ -61,8 +64,7 @@
     <section class="description">
       <div class="row">
         <div class="col-6-xl description-items">
-          <h2 class="section-title">Brakuje Ci czasu na sprzątanie lub masz zbyt dużo obowiązków na głowie ? Nic sie nie stało! zrobimy to za Ciebie! Posprzątamy twój dom lub mieszkanie aż będzie lśnić używając przy tym sprzętu i środków wysokiej
-            jakości.</h2>
+          <h2 class="section-title">Nie masz możliwości posprzątania domu? Pomożemy!</h2>
           <ul>
             <li class="section-text description-item">odkurzanie i mycie podłóg </li>
             <li class="section-text description-item">doczyszczenie kuchni, </li>
@@ -79,8 +81,7 @@
       <div class="row">
         <div class="col-6-xl office-img"></div>
         <div class="col-6-xl description-items">
-          <h2 class="section-title">Oferujemy usługi sprzątające dla firm oraz biur na terenie Łodzi w trosce o lepszy komfort Państwa pracowników. Sprzątanie firmy lub biura nie ominie nikogo dlatego zapewniamy Państwu kompleksowe sprzątanie,
-            używając przy tym sprzętu wysokiej jakości, a także sprawdzonych i odpowiednich środków przyjaznych dla Państwa pracowników.</h2>
+          <h2 class="section-title">Oferujemy usługi sprzątające dla firm oraz biur na terenie Łodzi w trosce o lepszy komfort Państwa pracowników.</h2>
           <ul>
             <li class="section-text description-item"> utrzymanie czystości sal konferencyjnych</li>
             <li class="section-text description-item"> utrzymanie czystości pomieszczeń socjalnych </li>
@@ -108,20 +109,34 @@
           <button class="btn btn-white">Kontakt</button>
         </div>
       </div>
-      </div>
     </section>
     <section class="about-us">
       <div class="row">
-        <div class="about-us-description col-6-xl flex-center">
+        <div class="about-us-description col-6-xl">
           <h2 class="section-title">Kim jesteśmy?</h2>
           <p class="about-us-items section-text">Jesteśmy dynamicznie rozwijającą się firmą świadczącą usługi utrzymywania czystości w Łodzi i okolicach. W swojej pracy wykorzystujemy najlepszy sprzęt oraz środki czystości znanych marek. Posiadamy
             wykwalifikowanych
             pracowników, którzy od wielu lat pracują w branży. Priorytetem naszej działalności jest świadczenie usług na najwyższym poziomie. Głównym wyznacznikiem kierunku działania naszej firmy jest zadowolenie Klienta.
           </p>
-          <p class="about-us-items section-text">Aby dowiedzieć się o cenach naszych usług prosimy dzwonić pod numer: <b>691 108 199</b></p>
+          <p class="about-us-items section-text">Aby umówić wyzytę prosimy dzwonić pod numer: <b>691 108 199</b></p>
+          <!---
+          <p class="about-us-items section-text">Lub do nas napisać:</p>
+          <form class="col-6-xl" action="https://formspree.io/email@domain.tld" method="post">
+            <div class="row">
+              <input class="form-item section-text" type="text" placeholder="Imię Nazwisko" name="name" required>
+              <input class="form-item section-text" type="email" placeholder="Email" name="email" required>
+            </div>
+            <div class="row">
+              <input class="form-item width-100 section-text" type="number" placeholder="Telefon" name="telefon" required>
+              <input class="form-item width-100 section-text" type="number" placeholder="Telefon" name="telefon">
+            </div>
+            <textarea class="form-item section-text" rows="5" cols="30" required placeholder="Treść wiadomości" name="treść"></textarea>
+            <input class="form-item btn btn-blue section-text" type="submit" value="Wyślij wiadomość" name="submit">
+          </form>
+          --->
         </div>
         <div class="col-6-xl flex-center">
-          <img class="about-us-img" src="images/service.jpg">
+          <img class="about-us-img" src="images/service.jpg" alt="service heart">
         </div>
       </div>
     </section>
@@ -129,7 +144,7 @@
   <footer class="footer-container">
     <div class="row">
       <div class="col-4-xl">
-        <img class="footer-logo" src="./images/logo.png">
+        <img class="footer-logo" src="./images/logo.png" alt="logo heart">
         <h2 class="footer-item section-title">Heart - Profesjonalne usługi sprzątające dla Ciebie i Twojego domu</h2>
       </div>
       <div class="col-4-xl flex-center">
@@ -137,6 +152,7 @@
         <ul class="footer-offer">
           <li class="footer-item section-text">Sprzątanie domów</li>
           <li class="footer-item section-text">Sprzątanie mieszkań</li>
+          <li class="footer-item section-text">Mycie okien</li>
           <li class="footer-item section-text">Sprzątanie biur</li>
           <li class="footer-item section-text">Sprzątanie lokali po remontach</li>
         </ul>

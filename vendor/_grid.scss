@@ -2,7 +2,7 @@
   @for $i from 1 through 12 {
     .col-#{$i}-#{$prefix} {
       $width: 100% / 12 * $i;
-      width: $width;
+      max-width: $width;
       display: flex;
       flex-direction: column;
     }
@@ -20,7 +20,6 @@
   // MOBILE
   @include grid('sm');
 }
-
 
 .flex-center {
   @include flex-center;
