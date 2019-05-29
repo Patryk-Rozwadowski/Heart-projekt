@@ -1,7 +1,90 @@
-@media (max-width:1780px) {
-  .offer {
-    .offer-item-container {
-    
+@media (max-width:1330px) {
+  .offer .offer-item-container {
+    padding: 10px;
+  }
+}
+@media (max-width:1300px) {
+  .section-text {
+    font-size: 1em;
+  }
+
+  .section-title {
+    font-size: 1.3em;
+  }
+
+  .description .description-items {
+    padding: 50px;
+  }
+
+  .offer .far,
+  .offer .fas {
+    font-size: 4em;
+  }
+
+  .about-us .about-us-description {
+    padding: 50px;
+  }
+}
+@media (max-width:978px) {
+  .navbar {
+    margin-right: 50px;
+
+    .nav-item {
+      font-size: 1em;
+    }
+  }
+
+  .navbar .nav-item-logo {
+    left: 100px;
+  }
+
+  .hero-container .hero-title {
+    font-size: 2.5em;
+    padding: 50;
+  }
+
+  .description {
+    text-align: center;
+
+    .section-title {
+      text-align: center;
+    }
+
+    .description-item-list {
+      list-style: none;
+      font-weight: 400;
+
+      &::before {
+        content: '-';
+      }
+    }
+  }
+}
+@media (max-width:731px) {
+  .hero-container .hero-title {
+    font-size: 2em;
+  }
+}
+
+@media (max-width:700px) {
+  .navbar {
+    .logo {
+      height: 3em;
+    }
+    .nav-item-logo {
+      left:50px;
+    }
+  }
+}
+
+@media (max-width:660px) {
+  .navbar {
+    .nav-item {
+      margin:5px;
+    }
+
+    .nav-item-logo .logo{
+      height:3em;
     }
   }
 }
