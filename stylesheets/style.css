@@ -28,13 +28,13 @@ input[type=number] { -moz-appearance: textfield; /* Firefox */ }
 
 html { overflow-x: hidden; }
 
-.navbar-container { text-align: right; position: fixed; display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: center; align-items: center; width: 100vw; height: 100px; background-color: #fff; border-bottom: 3px solid #3082d8; top: 0; }
+.navbar-container { text-align: right; position: fixed; display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: center; align-items: center; width: 100vw; height: 100px; background-color: #fff; border-bottom: 3px solid #3082d8; top: 0; z-index: 888; }
 
-.navbar { list-style: none; display: inline-block; padding: 0; margin-right: 150px; z-index: 99999999999; }
+.navbar { list-style: none; display: inline-block; padding: 0; margin-right: 150px; }
 
-.navbar .nav-item { font-family: 'Roboto', sans-serif; display: inline-block; color: #222; font-size: 1.4em; margin: 15px; text-transform: uppercase; animation: letter-appear 1s ease; border-color: transparent; transition: 300ms all ease; }
+.navbar .nav-item { font-family: 'Roboto', sans-serif; display: inline-block; color: #222; font-size: 1.4em; margin: 15px; text-transform: uppercase; animation: letter-appear 1s ease; border-color: transparent; transition: 500ms all ease; border-bottom: 1px solid transparent; }
 
-.navbar .nav-item:hover { cursor: pointer; border-bottom: 1px solid #222; }
+.navbar .nav-item:hover { cursor: pointer; border-bottom: 4px solid #3082d8; }
 
 .navbar .nav-item-logo { position: absolute; left: 150px; }
 
@@ -50,7 +50,7 @@ html { overflow-x: hidden; }
 
 .hero-arrow { position: absolute; bottom: 50px; right: 50%; font-size: 3em; color: #fff; animation: arrow-animation 2s ease infinite; }
 
-.offer { margin-bottom: 100px; text-align: center; }
+.offer { margin-bottom: 60px; text-align: center; }
 
 .offer .offer-item-container { text-align: center; padding: 50px; }
 

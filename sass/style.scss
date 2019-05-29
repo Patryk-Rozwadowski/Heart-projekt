@@ -23,6 +23,7 @@ html {
   background-color: $white;
   border-bottom: 3px solid $blue;
   top: 0;
+  z-index: 888;
 }
 
 .navbar {
@@ -30,7 +31,6 @@ html {
   display: inline-block;
   padding: 0;
   margin-right: 150px;
-  z-index: 99999999999;
 
   .nav-item {
     @include roboto-font;
@@ -41,11 +41,12 @@ html {
     text-transform: uppercase;
     animation: letter-appear 1s ease;
     border-color: transparent;
-    transition: 300ms all ease;
+    transition: 500ms all ease;
+    border-bottom: 1px solid transparent;
 
     &:hover {
       cursor: pointer;
-      border-bottom: 1px solid #222;
+      border-bottom: 4px solid $blue;
     }
   }
 
@@ -100,7 +101,7 @@ html {
 }
 
 .offer {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   text-align: center;
 
   .offer-item-container {
