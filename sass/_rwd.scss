@@ -22,7 +22,7 @@
   }
 
   .about-us .about-us-description {
-    padding: 50px;
+    padding: 10px;
   }
 }
 @media (max-width:978px) {
@@ -65,26 +65,65 @@
     font-size: 2em;
   }
 }
-
 @media (max-width:700px) {
   .navbar {
     .logo {
       height: 3em;
     }
+
     .nav-item-logo {
-      left:50px;
+      left: 20px;
+    }
+  }
+
+  .offer .section-text {
+    padding: 10px 50px;
+  }
+}
+@media (max-width:660px) {
+  .about-us {
+    margin: 50px;
+  }
+
+  .navbar {
+    .nav-item {
+      margin: 5px;
+    }
+
+    .nav-item-logo .logo {
+      height: 3em;
     }
   }
 }
+@media (max-width:550px) {
+  .section-text {
+    font-size: 0.75em;
+  }
 
-@media (max-width:660px) {
+  .section-title {
+    font-size: 0.9em;
+  }
+
   .navbar {
-    .nav-item {
-      margin:5px;
-    }
+    margin-right: 20px;
 
-    .nav-item-logo .logo{
-      height:3em;
+    .nav-item {
+      font-size: 0.7em;
+      margin-right: 0;
     }
+  }
+}
+@media (max-width:400px) {
+  .navbar .nav-item {
+    font-size: 0.7em;
+  }
+}
+@media (max-width:360px) {
+  .navbar .nav-item {
+    font-size: 0.5em;
+  }
+
+  .about-us .about-us-items:last-child {
+    font-size:1em;
   }
 }

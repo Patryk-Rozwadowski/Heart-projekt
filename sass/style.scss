@@ -30,6 +30,7 @@ html {
   display: inline-block;
   padding: 0;
   margin-right: 150px;
+  z-index: 99999999999;
 
   .nav-item {
     @include roboto-font;
@@ -59,12 +60,14 @@ html {
 }
 
 .hero-container {
+  position: relative;
   margin: 50px auto 0;
   background: url("/images/header.jpeg") no-repeat;
   background-size: cover;
   height: 90vh;
   width: 100vw;
   text-align: center;
+  z-index: -1;
 
   .hero-title {
     @include roboto-font;
@@ -85,6 +88,15 @@ html {
       cursor: pointer;
     }
   }
+}
+
+.hero-arrow {
+  position: absolute;
+  bottom: 50px;
+  right: 50%;
+  font-size: 3em;
+  color: $white;
+  animation: arrow-animation 2s ease infinite;
 }
 
 .offer {
@@ -167,15 +179,22 @@ html {
 
 .about-us {
   text-align: center;
-  margin:100px;
+  margin: 80px 80px 150px;
 
   .about-us-description {
-    padding: 100px;
-    padding-top:0;
+    padding-top: 0;
+    line-height: 1.3em;
   }
 
   .about-us-items {
     text-align: left;
+  }
+
+  .about-us-items:last-child {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.2em;
+    line-height: 1.3em;
   }
 
   .about-us-img {
@@ -204,9 +223,11 @@ html {
     font-weight: 300;
     margin: 5px;
   }
+
   .section-title {
     font-weight: 900;
   }
+
   .footer-logo {
     object-fit: contain;
     height: 60px;
@@ -243,12 +264,32 @@ html {
     opacity: 1;
   }
 }
+@keyframes arrow-animation {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.5);
+  }
+
+  35% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 
 * {
   box-sizing: border-box;
 }
 @import 'sass/rwd.scss';
-
 @mixin grid($prefix) {
   @for $i from 1 through 12 {
     .col-#{$i}-#{$prefix} {
@@ -275,6 +316,7 @@ html {
 .flex-center {
   @include flex-center;
 }
-ul{
-  padding:0;
+
+ul {
+  padding: 0;
 }
