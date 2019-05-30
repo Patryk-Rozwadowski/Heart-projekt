@@ -200,6 +200,8 @@ html {
 
   .about-us-img {
     border-radius: 3px;
+    width: 100%;
+    padding: 20px;
   }
 }
 
@@ -320,4 +322,10 @@ html {
 
 ul {
   padding: 0;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+  text-decoration-line: none;
 }

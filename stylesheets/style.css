@@ -14,6 +14,8 @@
 
 .btn-blue:hover { border: 1px solid #3082d8; background-color: #3082d8; color: #fff; cursor: pointer; }
 
+.btn-call { padding: 5px; }
+
 .btn-white { border: 1px solid #fff; color: #5186bf; transition: 400ms all ease; }
 
 .btn-white:hover { color: #fff; background-color: #5186bf; cursor: pointer; }
@@ -90,7 +92,7 @@ html { overflow-x: hidden; }
 
 .about-us .about-us-items:last-child { text-align: center; text-decoration: underline; font-size: 1.2em; line-height: 1.3em; }
 
-.about-us .about-us-img { border-radius: 3px; }
+.about-us .about-us-img { border-radius: 3px; width: 100%; padding: 20px; }
 
 .contact { background-color: #5186bf; }
 
@@ -155,7 +157,8 @@ html { overflow-x: hidden; }
 @media (max-width: 550px) { .section-text { font-size: 0.75em; }
   .section-title { font-size: 0.9em; }
   .navbar { margin-right: 20px; }
-  .navbar .nav-item { font-size: 0.7em; margin-right: 0; } }
+  .navbar .nav-item { font-size: 0.7em; margin-right: 0; }
+  .offer-title { font-size: 2em; } }
 
 @media (max-width: 400px) { .navbar .nav-item { font-size: 0.7em; } }
 
@@ -204,3 +207,5 @@ html { overflow-x: hidden; }
 .flex-center { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
 ul { padding: 0; }
+
+a:-webkit-any-link { cursor: pointer; text-decoration: none; -webkit-text-decoration-line: none; text-decoration-line: none; }
