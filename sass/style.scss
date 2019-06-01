@@ -218,15 +218,6 @@ html {
   background-color: $black-lighter;
   padding: 50px;
 
-  .footer-item {
-    color: $white;
-    text-align: center;
-    font-size: 0.9em;
-    list-style: none;
-    font-weight: 300;
-    margin: 5px;
-  }
-
   .section-title {
     font-weight: 900;
   }
@@ -249,6 +240,24 @@ html {
   .mail {
     unicode-bidi: bidi-override;
     direction: rtl;
+  }
+}
+
+.footer-item {
+  color: $white;
+  text-align: center;
+  font-size: 0.9em;
+  list-style: none;
+  font-weight: 300;
+  margin: 5px;
+}
+
+.designed {
+  background-color: $black;
+  padding:15px;
+
+  .footer-item {
+    font-size:0.8em;
   }
 }
 @keyframes letter-appear {

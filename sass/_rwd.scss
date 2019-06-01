@@ -94,6 +94,9 @@
       height: 3em;
     }
   }
+  .btn-call {
+    padding:5px;
+  }
 }
 @media (max-width:550px) {
   .section-text {
@@ -119,12 +122,12 @@
 }
 @media (max-width:400px) {
   .navbar .nav-item {
-    font-size: 0.7em;
+    font-size: 0.75em;
   }
 }
 @media (max-width:360px) {
   .navbar .nav-item {
-    font-size: 0.5em;
+    font-size: 0.6em;
   }
 
   .about-us .about-us-items:last-child {

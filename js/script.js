@@ -10,11 +10,11 @@ const offerNav = document.getElementById('offer');
 const homeNav = document.getElementById('home');
 const serviceNav = document.getElementById('service');
 
-scrollTo = (element) => {
+const scrollTo = (element) => {
   window.scroll({
     behavior: 'smooth',
     left: 0,
-    top: element.offsetTop - 150
+    top: element.offsetTop - 100
   });
 }
 

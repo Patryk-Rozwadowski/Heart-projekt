@@ -4,11 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-  <title>Heart - profesjonalne sprzątanie</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <meta name="google-site-verification" content="bBWWy8uksq1rPBqWgGyevebpdZAfA97dOy9uKYhcu8k">
+  <meta name="description" content="Profesjonalna firma sprzątająca w Łodzi i okolic. Sprzątamy domy, mieszkania i biura.">
+  <neta name="keywords" content="Łódź sprzątanie, sprzątanie, Łodź, firma sprzatająca">
+    <meta name="author" content="Patryk Rozwadowski">
+    <title>Heart - sprzątanie domów, mieszkań, biur w Łodzi i okolic</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 </head>
 
 <body>
@@ -29,11 +33,6 @@
         <div class="overlay">
           <div class="col-6-xl col-8-md col-10-sm">
             <h1 class="hero-title">Profesjonalne sprzątanie na terenie Łodzi i okolic</h1>
-            <!---
-          <div class="row flex-center">
-            <button class="btn btn-white">Zamów wizyte</button>
-          </div>
-        -->
           </div>
         </div>
         <i class="fas fa-angle-double-down hero-arrow" id="next-section"></i>
@@ -51,21 +50,21 @@
             <h3 class="about-us-items section-text">Każde zlecenie wyceniamy indywidualnie w czasie pierwszej wizyty. Wspólnie
               z właścicielem ustalamy zakres prac i harmonogram wykonywania prac.
             </h3>
-            <!---
-          <p class="about-us-items section-text">Lub do nas napisać:</p>
-          <form class="col-6-xl" action="https://formspree.io/email@domain.tld" method="post">
-            <div class="row">
-              <input class="form-item section-text" type="text" placeholder="Imię Nazwisko" name="name" required>
-              <input class="form-item section-text" type="email" placeholder="Email" name="email" required>
-            </div>
-            <div class="row">
-              <input class="form-item width-100 section-text" type="number" placeholder="Telefon" name="telefon" required>
-              <input class="form-item width-100 section-text" type="number" placeholder="Telefon" name="telefon">
-            </div>
-            <textarea class="form-item section-text" rows="5" cols="30" required placeholder="Treść wiadomości" name="treść"></textarea>
-            <input class="form-item btn btn-blue section-text" type="submit" value="Wyślij wiadomość" name="submit">
-          </form>
--->
+            <p class="about-us-items section-text">Lub do nas napisać:</p>
+            <button class="btn btn-blue" id="contact-show">Pokaż</button>
+            <form class="col-6-xl col-6-md col-6-sm" action="https://formspree.io/heart.sprzatanie@gmail.com" method="post">
+              <div class="row">
+                <input class="form-item section-text" type="text" placeholder="Imię Nazwisko *" name="Imie nazwisko" required>
+                <input class="form-item section-text" type="email" placeholder="Email *" name="Email" required>
+              </div>
+              <div class="row">
+                <input class="form-item width-100 section-text" type="text" placeholder="Nazwa firmy" name="Nazwa firmy">
+                <input class="form-item width-100 section-text" type="number" placeholder="Telefon *" name="Telefon" required>
+              </div>
+              <textarea class="form-item section-text" rows="5" cols="30" required placeholder="Treść wiadomości *" name="Treść wiadoności"></textarea>
+              <input class="form-item btn btn-blue section-text" type="submit" value="Wyślij wiadomość" name="submit">
+              <span class="sectio-text">* - wymagane</span>
+            </form>
         </div>
         <div class="flex-center col-6-xl col-12-md col-12-sm flex-center">
           <img class="about-us-img" src="images/service.jpg" alt="service heart">
@@ -124,9 +123,8 @@
       <div class="row">
         <div class="col-6-xl col-6-md office-img"></div>
         <div class="col-6-xl col-6-md description-items">
-          <h3 class="section-title">Sprzątanie nie musi być już Państwa utrapieniem! W naszej pracy stawiamy na kompleksowość i dokładność, dlatego zamawiając u nas usługę sprzątania domu lub mieszkania, otrzymają Państwo pełen zakres prac. Z naszej
-            strony zapewniamy, że zrobimy wszystko co w naszej mocy, aby nasze prace były jak najmniej uciążliwe dla mieszkańców.</h3>
-          <h4 class="section-title">W trosce o lepszy komfort Państwa pracowników:</h4>
+
+          <h4 class="section-title">W trosce o lepszy komfort Państwa pracowników oferujemy:</h4>
           <ul>
             <li class="section-text description-item-list"> utrzymanie czystości sal konferencyjnych</li>
             <li class="section-text description-item-list"> utrzymanie czystości pomieszczeń socjalnych </li>
@@ -145,29 +143,36 @@
       </div>
     </section>
   </main>
-  <footer class="footer-container">
-    <div class="row">
-      <div class="col-4-xl col-12-md col-12-sm">
-        <img class="footer-logo" src="./images/logo.png" alt="logo heart">
-        <h2 class="footer-item section-text">Heart - Profesjonalne usługi sprzątające dla Ciebie i Twojego domu</h2>
-      </div>
-      <div class="col-4-xl col-12-md col-12-sm flex-center">
-        <ul class="footer-offer">
-          <li class="footer-item section-title">Usługi</li>
-          <li class="footer-item section-text">Sprzątanie domów</li>
-          <li class="footer-item section-text">Sprzątanie mieszkań</li>
-          <li class="footer-item section-text">Mycie okien</li>
-          <li class="footer-item section-text">Sprzątanie biur</li>
-          <li class="footer-item section-text">Sprzątanie lokali po remontach</li>
-        </ul>
-      </div>
-      <div class="col-4-xl col-12-md col-12-sm flex-center">
-        <ul>
-          <li class="footer-item section-title">Kontakt:</li>
-          <li class="footer-item section-text">Telefon: 691 108 199 <i class="fas fa-phone"></i></li>
-          <li class="footer-item section-text">Mail: <a href="mailto:beatazd@interia.eu" class="mail footer-item">ue.airetni@dzataeb</a> <i class="far fa-envelope"></i></h2>
+  <footer>
+    <div class="footer-container">
+      <div class="row">
+        <div class="col-4-xl col-12-md col-12-sm">
+          <img class="footer-logo" src="./images/logo.png" alt="logo heart">
+          <h2 class="footer-item section-text">Heart - Profesjonalne usługi sprzątające dla Ciebie i Twojego domu</h2>
+        </div>
+        <div class="col-4-xl col-12-md col-12-sm flex-center">
+          <ul class="footer-offer">
+            <li class="footer-item section-title">Usługi</li>
+            <li class="footer-item section-text">Sprzątanie domów</li>
+            <li class="footer-item section-text">Sprzątanie mieszkań</li>
+            <li class="footer-item section-text">Mycie okien</li>
+            <li class="footer-item section-text">Sprzątanie biur</li>
+            <li class="footer-item section-text">Sprzątanie lokali po remontach</li>
+          </ul>
+        </div>
+        <div class="col-4-xl col-12-md col-12-sm flex-center">
+          <ul>
+            <li class="footer-item section-title">Kontakt:</li>
+            <li class="footer-item section-text">Telefon: 691 108 199 <i class="fas fa-phone"></i></li>
+            <li class="footer-item section-text">Mail: <a href="mailto:heart.sprzatanie@gmail.com" class="mail footer-item">heart.sprzatanie@gmail.com</a> <i class="far fa-envelope"></i></h2>
+        </div>
       </div>
     </div>
+    <section class="designed row">
+      <div class="col-12-xl col-12-md col-12-sm">
+        <h5 class="section-text footer-item">2019 made by <a href="mailto:pm.rozwadowski@gmail.com" class="section-text footer-item">Patryk Rozwadowski</a>
+      </div>
+    </section>
   </footer>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
