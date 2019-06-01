@@ -14,15 +14,13 @@
 
 .btn-blue:hover { border: 1px solid #3082d8; background-color: #3082d8; color: #fff; cursor: pointer; }
 
-.btn-call { padding: 10px; }
+.btn-contact { padding: 10px; width: 50%; }
 
 .btn-white { border: 1px solid #fff; color: #5186bf; transition: 400ms all ease; }
 
 .btn-white:hover { color: #fff; background-color: #5186bf; cursor: pointer; }
 
-.form-item { width: 100%; padding: 5px; margin: 5px; border: 1px solid rgba(222, 222, 222, 0.9); }
-
-.form-item:nth-child(3), .form-item:nth-child(4) { width: 100%; }
+.form-item { width: 100%; padding: 5px; margin-bottom: 5px; border: 1px solid rgba(222, 222, 222, 0.9); }
 
 input::-webkit-inner-spin-button, input::-webkit-outer-spin-button { /* display: none; <- Crashes Chrome on hover */ -webkit-appearance: none; margin: 0; }
 
@@ -94,6 +92,10 @@ html { overflow-x: hidden; }
 
 .about-us .about-us-img { border-radius: 3px; width: 100%; padding: 20px; }
 
+.about-us .btn-contact { margin: 10px 0; }
+
+.about-us .btn-call { padding: 5px; }
+
 .contact { background-color: #5186bf; }
 
 .contact .section-title { font-size: 3em; color: #fff; }
@@ -115,6 +117,10 @@ html { overflow-x: hidden; }
 .designed { background-color: #222; padding: 15px; }
 
 .designed .footer-item { font-size: 0.8em; }
+
+.form-container { visibility: hidden; height: 0; transition: 300ms all ease; }
+
+.form-container.show { height: 100%; visibility: visible; }
 
 @keyframes letter-appear { 0% { letter-spacing: -0.5em;
     opacity: 0; }

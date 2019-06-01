@@ -203,6 +203,14 @@ html {
     width: 100%;
     padding: 20px;
   }
+
+  .btn-contact {
+    margin:10px 0;
+  }
+
+  .btn-call {
+    padding:5px;
+  }
 }
 
 .contact {
@@ -260,6 +268,16 @@ html {
     font-size:0.8em;
   }
 }
+.form-container {
+  visibility: hidden;
+  height:0;
+  transition: 300ms all ease;
+}
+.form-container.show {
+  height:100%;
+  visibility: visible;
+}
+
 @keyframes letter-appear {
   0% {
     letter-spacing: -0.5em;

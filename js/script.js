@@ -10,6 +10,22 @@ const offerNav = document.getElementById('offer');
 const homeNav = document.getElementById('home');
 const serviceNav = document.getElementById('service');
 
+
+// form btn
+const contactButton = document.getElementById('contact-show');
+
+contactButton.addEventListener('click', () => {
+  document.querySelector('.form-container').classList.toggle('show');
+
+})
+
+const changeOption = () => {
+  if (contactButton.innerHTML === 'Schowaj') {
+    contactButton.textContent = 'Pokaż';
+  } else {
+    contactButton.textContent = 'Schowaj';
+  }
+}
 const scrollTo = (element) => {
   window.scroll({
     behavior: 'smooth',
@@ -18,22 +34,23 @@ const scrollTo = (element) => {
   });
 }
 
-next.addEventListener('click', function() {
+next.addEventListener('click', () => {
+  next.stopPropagation();
   scrollTo(aboutUs);
 });
 
-aboutUSNav.addEventListener('click', function() {
+aboutUSNav.addEventListener('click', () => {
   scrollTo(aboutUs);
 });
 
-offerNav.addEventListener('click', function() {
+offerNav.addEventListener('click', () => {
   scrollTo(offer);
 });
 
-homeNav.addEventListener('click', function() {
+homeNav.addEventListener('click',  () => {
   scrollTo(home);
 });
 
-serviceNav.addEventListener('click', function() {
+serviceNav.addEventListener('click',  () => {
   scrollTo(service);
 });

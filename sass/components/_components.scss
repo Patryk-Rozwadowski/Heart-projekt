@@ -50,8 +50,9 @@
   }
 }
 
-.btn-call {
+.btn-contact {
   padding: 10px;
+  width:50%;
 }
 
 .btn-white {
@@ -69,13 +70,8 @@
 .form-item {
   width: 100%;
   padding: 5px;
-  margin: 5px;
+  margin-bottom: 5px;
   border: 1px solid rgba(222,222,222,0.9);
-}
-
-.form-item:nth-child(3),
-.form-item:nth-child(4) {
-  width: 100%;
 }
 
 input::-webkit-inner-spin-button,
